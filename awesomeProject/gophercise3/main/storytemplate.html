@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href = storytemplate.css>
+    <title>{{.Title}}</title>
+</head>
+<body>
+<container style = "padding: 1000px">
+<div class = "blogpost">
+    <div style="text-align: center">{{.Title}}</div>
+    <div style="text-align: center">{{range .Story}}</div>
+    <p>{{.}}</p>
+    {{end}}
+    <div style="text-align: center">{{range .Options}}</div>
+    <a href =  "{{.Arc}}" style="text-align: center">{{.Text}}</a>
+    <br>
+    <br>
+    {{end}}
+</container>
+</div>
+</body>
+</html>
